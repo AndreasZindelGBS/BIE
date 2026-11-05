@@ -1,8 +1,22 @@
-**/bin/
-**/obj/
-.vs/
-TestResults/
-artifacts/
-*.db
-*.db-shm
-*.db-wal
+# Alles ignorieren
+*
+
+# Gitignore selbst behalten
+!.gitignore
+
+# Nur Lernende/Starter übernehmen
+!/Lernende/
+!/Lernende/Starter/
+
+# Inhalt von Lernende/Starter übernehmen
+!/Lernende/Starter/**
+
+# Folgende Ordner und Dateien ignorieren
+bie-tests/
+BIE.slnx
+.github/workflows/tests.yml
+src/BIE.Core/
+src/BIE.Web/
+tests/BIE.UnitTests/
+tests/BIE.IntegrationTests/
+tests/BIE.E2ETests/
